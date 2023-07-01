@@ -7,9 +7,9 @@
 #afuera {
   font-size: calc(100vw / 1600 * 100);
 
-//   @media (max-width: 768px) {
-//     font-size: calc(100vw / 768 * 100);
-//   }
+  //   @media (max-width: 768px) {
+  //     font-size: calc(100vw / 768 * 100);
+  //   }
 }
 
 #adentro {
@@ -27,7 +27,7 @@
 
   a {
     text-decoration: none !important;
-    color: #00345F !important;
+    color: #00345f !important;
 
     &:hover {
       color: #466c8a !important;
@@ -55,7 +55,7 @@
     }
 
     .bg1 {
-      background-image: url('/assets/images/img_inicio/foto4decosun.jpg');
+      background-image: url("/assets/images/img_inicio/foto4decosun.jpg");
       border-radius: 20px;
       background-position: left center;
       animation: fadeinBottom 1s both;
@@ -64,20 +64,19 @@
     }
 
     .bg2 {
-      background-image: url('/assets/images/img_inicio/foto2decosun.jpg');
+      background-image: url("/assets/images/img_inicio/foto2decosun.jpg");
       border-radius: 20px;
       background-position: right center;
       animation: fadeinTop 1s 0.3s both;
       margin-left: 30px;
       margin-bottom: 40px;
-
     }
   }
 
   .formMedio {
     display: flex;
     margin: auto;
-    width: 5,5rem;
+    width: 5, 5rem;
     padding: 37.031px 57.031px 37.031px 57.031px;
     color: #4a76a3;
     background: rgba(255, 255, 255, 0.3);
@@ -147,10 +146,15 @@
     display: flex;
     align-items: center;
   }
-
+  #bajologo {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
   .bajologo {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #00345F;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #00345f;
     padding-top: 0;
     margin-top: 0;
     font-size: 12px;
@@ -160,7 +164,7 @@
   }
 
   .frase1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 20px !important;
@@ -168,40 +172,69 @@
   }
 
   .frase2 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #00345F;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #00345f;
     font-size: 21px;
     font-weight: 800 !important;
     margin-bottom: 25px;
   }
-
-  .izquierda1 {
-    font-size: 14px;
-    margin-bottom: 20px;
+  .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #region {
+    font-size: 16px;
+    margin-bottom: 10px;
+    // display: flex;
     font-weight: 800;
+    transition: font-size 0.3s; /* Agrega una transición suave para el cambio de tamaño de fuente */
 
     &:hover {
-      color: #4a76a3;
+      font-size: 18px; /* Cambia el tamaño de fuente en el hover */
+      color: #4a76a3; /* Cambia el color de fuente en el hover */
     }
   }
-
   .mapa {
     display: flex;
-    margin-right: 10px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 20px; /* Añade un margen inferior */
+    align-self: center;
+  }
+
+  .izquierda1 {
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-right: 10px; /* Añade un margen derecho */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    font-weight: 800;
   }
 
   .derecha {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-self: flex-end;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 30px;
     display: flex;
     font-weight: 800;
   }
 
   .izquierda2 {
-    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-self: flex-start;
+    margin-left: 10px;
+    order: 1;
+    font-size: 18px;
+    margin-right: 10px; /* Añade un margen derecho */
     margin-bottom: 20px;
     display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
     font-weight: 800;
   }
 }
@@ -230,9 +263,7 @@
 
 // Estilos para pantallas grandes (desktop)
 // @media (min-width: 1024px) {
-//   // Estilos específicos para pantallas grandes
 
-//   // ...
 // }
 
 // Estilos para tabletas
@@ -251,17 +282,16 @@
     -ms-user-select: none;
     user-select: none;
     z-index: 1;
-    
-  
+
     a {
       text-decoration: none !important;
-      color: #00345F !important;
-  
+      color: #00345f !important;
+
       &:hover {
         color: #466c8a !important;
       }
     }
-  
+
     .bg-box {
       position: absolute;
       top: 0;
@@ -273,7 +303,7 @@
       display: flex;
       overflow: hidden;
       filter: opacity(0.8);
-  
+
       div {
         flex: 1;
         margin: 0 0.3rem;
@@ -281,31 +311,30 @@
         background-size: 100%;
         border-radius: 20px;
       }
-  
+
       .bg1 {
-        background-image: url('/assets/images/img_inicio/foto4decosun.jpg');
+        background-image: url("/assets/images/img_inicio/foto4decosun.jpg");
         border-radius: 20px;
         background-position: left bottom;
         animation: fadeinBottom 1s both;
         margin-right: 30px;
         margin-top: 40px;
       }
-  
+
       .bg2 {
-        background-image: url('/assets/images/img_inicio/foto2decosun.jpg');
+        background-image: url("/assets/images/img_inicio/foto2decosun.jpg");
         border-radius: 20px;
-        background-position: right top;        
+        background-position: right top;
         animation: fadeinTop 1s 0.3s both;
         margin-left: 30px;
         margin-bottom: 40px;
-  
       }
     }
-  
+
     .formMedio {
       display: flex;
       margin: auto;
-      width: 5,5rem;
+      width: 5, 5rem;
       padding: 37.031px 57.031px 37.031px 57.031px;
       color: #4a76a3;
       background: rgba(255, 255, 255, 0.3);
@@ -317,12 +346,8 @@
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-  
-    
     }
   }
-  
-
 }
 
 // Estilos para dispositivos móviles
@@ -346,16 +371,16 @@
     -ms-user-select: none;
     user-select: none;
     z-index: 1;
-  
+
     a {
       text-decoration: none !important;
-      color: #00345F !important;
-  
+      color: #00345f !important;
+
       &:hover {
         color: #466c8a !important;
       }
     }
-} 
+  }
   .bg-box {
     position: absolute;
     top: 0;
@@ -368,7 +393,7 @@
     overflow: hidden;
     flex-direction: column-reverse;
     filter: opacity(0.8);
-    
+
     // div {
     //   flex: 1;
     //   margin: 0;
@@ -378,9 +403,9 @@
     // }
 
     .bg1 {
-      flex:1;
-      margin:0;
-      background-image: url('/assets/images/img_inicio/foto4decosun.jpg');
+      flex: 1;
+      margin: 0;
+      background-image: url("/assets/images/img_inicio/foto4decosun.jpg");
       border-radius: 20px;
       background-position: left bottom;
       animation: fadeinBottom 1s both;
@@ -389,13 +414,13 @@
     }
 
     .bg2 {
-      background-image: url('/assets/images/img_inicio/foto2decosun.jpg');
+      background-image: url("/assets/images/img_inicio/foto2decosun.jpg");
       border-radius: 20px;
-      background-position: right top;        
+      background-position: right top;
       animation: fadeinTop 1s 0.3s both;
       margin-bottom: 0px;
       flex: 1;
-      margin:0;  
+      margin: 0;
       margin-left: 120px !important;
     }
   }
