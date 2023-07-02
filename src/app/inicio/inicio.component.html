@@ -16,14 +16,17 @@
                     <div class="align-self-stretch  mapa"> <img class="logo" src="assets/images/img_inicio/mapa.png"
                             alt=""></div>
                     <div class="d-grid">
-                        <div class="align-self-center izquierda1"><a id="region"
-                            [routerLink]="['/home', { parametro: 'norte' }]">Zona Norte</a></div>
-
-                        <div class="align-self-center derecha"><a id="region" [routerLink]="['/home', { parametro: 'centro' }]">
-                                Zona Centro</a></div>
-
-                        <div class="align-self-center  izquierda2"><a id="region" [routerLink]="['/home', { parametro: 'sur' }]">
-                                Zona Sur</a></div>
+                        <div class="align-self-center izquierda1">
+                            <a id="region" [routerLink]="['/home']" [queryParams]="{ parametro: 'norte' }">Zona Norte</a>
+                          </div>
+                          
+                          <div class="align-self-center derecha">
+                            <a id="region" [routerLink]="['/home']" [queryParams]="{ parametro: 'centro' }">Zona Centro</a>
+                          </div>
+                          
+                          <div class="align-self-center izquierda2">
+                            <a id="region" [routerLink]="['/home']" [queryParams]="{ parametro: 'sur' }">Zona Sur</a>
+                          </div>
                     </div>
                 </div>
             </div>

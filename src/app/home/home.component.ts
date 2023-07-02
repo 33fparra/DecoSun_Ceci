@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
   ngOnInit(): void {
     this.route.queryParams.subscribe((params : any )=> {
-      // console.log(params['parametro']);
+      console.log(params['parametro']);
       switch(params['parametro'])
       {
         case "norte":
@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit {
       }
     });
   }
-  ngAfterViewInit(): void {
+  async ngAfterViewInit(): Promise <void> {
     
-    this.loadScript("assets/js/typed.js");
+    await this.loadScript("assets/js/typed.js");
 
     this.loadScript("assets/js/letra.js");
   
