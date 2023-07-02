@@ -5,9 +5,9 @@
   <title>DecoSun</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
   <meta name="description" content="" />
-	<meta name="keywords" content="bootstrap" />
+ <meta name="keywords" content="bootstrap" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,37 +79,8 @@
 	<script async src="assets/js/moment.min.js"></script>
 	<script async src="assets/js/daterangepicker.js"></script>
 
-	<script src="assets/js/typed.js"></script>
-	<script>
-		$(function() {
-			var slides = $('.slides'),
-			images = slides.find('img');
-			// debugger
-			images.each(function(i) {
-				$(this).attr('data-id', i + 1);
-				console.log('imagen para comprobar:' + i)
-			})
-
-			var typed = new Typed('.typed-words', {
-				
-				strings: [" Cortinas Roller."," Toldos Proyectantes."],
-				typeSpeed: 80,
-				backSpeed: 80,
-				backDelay: 4000,
-				startDelay: 1000,
-				loop: true,
-				showCursor: true,
-				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
-					console.log(arrayPos);
-					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
-				}
-
-			});
-			console.log('llega aqui el');
-		})
-	</script>
+	<!-- <script src="assets/js/typed.js"></script>
+	<script src="assets/js/letra.js"></script> -->
 
 	<script async src="assets/js/custom.js"></script>
 

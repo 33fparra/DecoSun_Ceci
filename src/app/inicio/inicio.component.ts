@@ -13,14 +13,7 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {
   
   }
-  // @ViewChild('passwordInput') passwordInput!: ElementRef;
-  // isPasswordVisible: boolean = false;
 
-  // togglePswVisibility(): void {
-  //   const inputElement = this.passwordInput.nativeElement as HTMLInputElement;
-  //   this.isPasswordVisible = !this.isPasswordVisible;
-  //   inputElement.type = this.isPasswordVisible ? 'text' : 'password';
-  // }
 
 
 }
